@@ -1,3 +1,16 @@
+"""
+File: stack_best_models.py
+Name: Andy Lin
+--------------------------------
+This file demonstrates how to analyze boston
+housing dataset. Students will upload their 
+results to kaggle.com and compete with people
+in class!
+
+You are allowed to use pandas, sklearn, or build the
+model from scratch! Go data scientists!
+"""
+
 import pandas as pd
 import numpy as np
 from sklearn import linear_model, model_selection, metrics, preprocessing, ensemble, decomposition
