@@ -39,56 +39,79 @@ The scoring is based on the RMSE, that is RMSE(y) = (∑(hi -yi)^(2))^(0.5)
 ### Single models
 The following are best performance of each models with their RMS error and params:
 1. Linear Regression
+```
 	 Best RMS score for Linear Regression: 5.324489614528667
 	 Best Linear Regression Parameters: {'polynomialfeatures__degree': 1}
-2. Bagging Linear Regression
+```
+3. Bagging Linear Regression
+```
 	 Best RMS score for Bagging Linear Regression: 5.274442697141327
 	 Best Bagging Linear Regression Parameters: {'baggingregressor__n_estimators': 500,
-                                                'polynomialfeatures__degree': 1}
-3. Ridge Regression
+                                                     'polynomialfeatures__degree': 1}
+```
+4. Ridge Regression
+```
 	 Best RMS score for Ridge Regression: 3.5051286622188953
 	 Best Ridge Regression Parameters: {'polynomialfeatures__degree': 3,
-                                      'ridge__alpha': 0.8286427728546842}
-4. Bagging Ridge Regression
+                                            'ridge__alpha': 0.8286427728546842}
+```
+5. Bagging Ridge Regression
+```
 	 Best RMS score for Bagging Ridge Regression: 3.451171925961784
 	 Best Bagging Ridge Regression Parameters:
                                       {'baggingregressor__base_estimator__alpha':0.5689866029018293,
                                        'baggingregressor__n_estimators': 50,
                                        'polynomialfeatures__degree': 3}
-5. SVM Regression
+```
+6. SVM Regression
+```
 	 Best RMS score for SVM Regression: 4.038415902249551
 	 Best SVM Regression Parameters: {'polynomialfeatures__degree': 3,
-                                    'svr__C': 19,
-                                    'svr__gamma': 0.08685113737513521}
-6. Bagging SVM Regression
+                                          'svr__C': 19,
+                                          'svr__gamma': 0.08685113737513521}
+```
+7. Bagging SVM Regression
+```
 	 Best RMS score for Bagging SVM Regression: 4.464853073327095
 	 Best Bagging SVM Regression Parameters: {'baggingregressor__base_estimator__C': 9,
-		                                        'baggingregressor__base_estimator__gamma': 0.1,
-                                            'baggingregressor__n_estimators': 50,
-                                            'polynomialfeatures__degree': 2}
-7. Random Forest
+                                                  'baggingregressor__base_estimator__gamma': 0.1,
+                                                  'baggingregressor__n_estimators': 50,
+                                                  'polynomialfeatures__degree': 2}
+```
+8. Random Forest
+```
 	 Best RMS score for Random Forest: 3.6673632700767325
 	 Best Random Forest Parameters: {'polynomialfeatures__degree': 2,
-                                   'randomforestregressor__max_depth': 6,
-		                               'randomforestregressor__min_samples_leaf': 3}
-8. Bagging Random Forest
+                                         'randomforestregressor__max_depth': 6,
+                                         'randomforestregressor__min_samples_leaf': 3}
+```
+9. Bagging Random Forest
+```
 	 Best RMS score for Bagging Random Forest: 3.9554638002233093
 	 Best Bagging Random Forest Parameters: {'baggingregressor__base_estimator__max_depth': 5,
-		                                       'baggingregressor__base_estimator__min_samples_leaf': 3,
-                                           'baggingregressor__n_estimators': 10,
-		                                       'polynomialfeatures__degree': 3}
-9. XGBoost
+		 				 'baggingregressor__base_estimator__min_samples_leaf': 3,
+                                           	 'baggingregressor__n_estimators': 10,
+		 				 'polynomialfeatures__degree': 3}
+```
+10. XGBoost
+```
 	Best RMS score for XGBoost: 3.205411410780319
-	Best XGBoost Parameters: {'polynomialfeatures__degree': 2, 'xgbregressor__learning_rate': 0.2,
-	'xgbregressor__max_depth': 3, 'xgbregressor__n_estimators': 400}
+	Best XGBoost Parameters: {'polynomialfeatures__degree': 2, 
+				  'xgbregressor__learning_rate': 0.2,
+    				  'xgbregressor__max_depth': 3,
+    				  'xgbregressor__n_estimators': 400}
+```
 
-10. Bagging XGBoost
-	Best RMS score for Bagging XGBoost: 3.4415607793645075
-	Best Bagging XGBoost Parameters: {'baggingregressor__base_estimator__learning_rate': 0.2,
-					  'baggingregressor__base_estimator__max_depth': 3,
-			 		  'baggingregressor__base_estimator__n_estimators': 400,
-					  'baggingregressor__n_estimators': 10,
-			      		  'polynomialfeatures__degree': 1}
+12. Bagging XGBoost
+```
+        Best RMS score for Bagging XGBoost: 3.4415607793645075
+        Best Bagging XGBoost Parameters: {'baggingregressor__base_estimator__learning_rate': 0.2,
+                                          'baggingregressor__base_estimator__max_depth': 3,
+                                          'baggingregressor__base_estimator__n_estimators': 400,
+                                          'baggingregressor__n_estimators': 10,
+                                          'polynomialfeatures__degree': 1}
+```
+
 ### Stacking models
 
 In the beginning, we tend to combine PCA with Ridge and XGBoost. Sadly, after training with PCA, the RMS errordidn't decrease as we expected, so we droped the PCA model.
