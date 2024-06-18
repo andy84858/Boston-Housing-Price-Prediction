@@ -1,5 +1,5 @@
 """
-File: boston_housing_competition_1.py
+File: find_best_models.py
 Name: Andy Lin
 --------------------------------
 This file demonstrates how to analyze boston
