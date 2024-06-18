@@ -31,8 +31,8 @@ The Boston Housing Dataset is derived from information collected by the U.S. Cen
 The scoring is based on the RMSE, that is RMSE(y) = (∑(hi -yi)^(2))^(0.5)
 
 ## File Explanation
--In find_best_models.py we will test different models (single model and bagging model of Linear Regression, Ridge Regression, SVM Regression, Random Forest and XGBoost) and find each model's RMS error.
--In stack_best_models.py, we further explore the result of find_best_models.py by stacking two of best-performed models: Ridge Regression, XGBoost and use GridSearchCV to find best params.
+- In `find_best_models.py` we will test different models (single model and bagging model of Linear Regression, Ridge Regression, SVM Regression, Random Forest and XGBoost) and find each model's RMS error.
+- In `stack_best_models.py`, we further explore the result of find_best_models.py by stacking two of best-performed models: Ridge Regression, XGBoost and use GridSearchCV to find best params.
 
 ## Result
 
