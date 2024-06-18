@@ -128,3 +128,6 @@ The outcome are the best score in all of the training models.
     Best Ridge Model Parameters: {'alpha': 0.3593813663804626, 'poly_phi_degree': 3}
     Best XGBoost Model Parameters: {'n_estimators': 400, 'max_depth': 3, 'learning_rate': 0.2, 'poly_phi_degree': 2}
     Stacking Model RMS Error: 3.0739997458837887
+
+### Competition Result
+![Kaggle Leaderboard](/kaggle_leaderboard.jpeg)
