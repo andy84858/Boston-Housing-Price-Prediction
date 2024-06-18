@@ -84,11 +84,11 @@ def main():
 	test_id = test_data.pop('ID')
 
 	# Define extractors and models
-	poly_phi = preprocessing.PolynomialFeatures()			# Polynomial feature
+	poly_phi = preprocessing.PolynomialFeatures()				# Polynomial feature
 	lr = linear_model.LinearRegression()					# Linear Regression
-	ridge = linear_model.Ridge()							# Ridge Regression
-	svr = svm.SVR()											# SVM
-	rf = ensemble.RandomForestRegressor(random_state=42)    # Random Forest
+	ridge = linear_model.Ridge()						# Ridge Regression
+	svr = svm.SVR()								# SVM
+	rf = ensemble.RandomForestRegressor(random_state=42)    		# Random Forest
 	xgboost = xgb.XGBRegressor(random_state=42)				# XGBoost
 
 	# Define model dictionary for GridSearch
@@ -161,8 +161,7 @@ def main():
 	}
 	# Training every model
 	for model_name, model in models.items():
-		best_model, best_params, best_score = find_best_model(model_name, model, param_grids[model_name],
-															  x_train, y_train, x_val, y_val)
+		best_model, best_params, best_score = find_best_model(model_name, model, param_grids[model_name], x_train, y_train, x_val, y_val)
 		print(f'Best {model_name} Parameters: {best_params} with RMS error: {best_score}')
 		logging.info(f'Best {model_name} Parameters: {best_params} with RMS error: {best_score}')
 		# Normalize test data
