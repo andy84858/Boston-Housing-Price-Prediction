@@ -126,7 +126,10 @@ The outcome are the best score in all of the training models.
     Best score for Ridge Regression: 3.329732035938434
     Best score for XGBoost: 3.205411410780319
     Best Ridge Model Parameters: {'alpha': 0.3593813663804626, 'poly_phi_degree': 3}
-    Best XGBoost Model Parameters: {'n_estimators': 400, 'max_depth': 3, 'learning_rate': 0.2, 'poly_phi_degree': 2}
+    Best XGBoost Model Parameters: {'n_estimators': 400, 
+    				    'max_depth': 3, 
+	    			    'learning_rate': 0.2, 
+	    		            'poly_phi_degree': 2}
     Stacking Model RMS Error: 3.0739997458837887
 
 ### Competition Result
