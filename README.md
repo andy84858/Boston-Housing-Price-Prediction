@@ -6,8 +6,7 @@ This portfolio is modified from the SC201 Mar 2024 Kaggle competition and demons
 
 ## Dataset
 
-The dataset used in this Notebook is the Boston Housing dataset. The dataset can be found on Kaggle Datasets [here].
-https://www.kaggle.com/code/prasadperera/the-boston-housing-dataset
+The dataset used in this Notebook is the Boston Housing dataset. The dataset can be found on Kaggle Datasets [here](https://www.kaggle.com/code/prasadperera/the-boston-housing-dataset).
 
 The Boston Housing Dataset is derived from information collected by the U.S. Census Service concerning housing in the area of Boston, MA. The following describes the dataset columns:
 
