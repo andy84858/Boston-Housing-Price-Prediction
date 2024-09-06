@@ -25,7 +25,7 @@ TEST_DATA = 'boston_housing/test.csv'
 
 def main():
     """
-    This file heritage from the result of boston_housing_competition_1.py.
+    This file heritage from the result of find_best_model.py.
     I choose two of best-performed models to stake: Ridge Regression, XGBoost and use GridSearchCV to find best params.
     In the beginning, I tend to combine PCA with Ridge and XGBoost. Sadly, after training with PCA, the RMS error
     didn't decrease as I expected, so I drop the PCA model.
